@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cookmasterdesktop.ClientController">
+    <children>
+        <BarChart fx:id="BarChart" alternativeColumnFillVisible="true" animated="false" layoutX="53.0" layoutY="51.0" prefHeight="330.0" prefWidth="600.0" title="Types de clients">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <Button fx:id="fetch" layoutX="671.0" layoutY="716.0" mnemonicParsing="false" onAction="#fetch" text="Fetch" />
+        <Button fx:id="exportButton" layoutX="736.0" layoutY="716.0" mnemonicParsing="false" onAction="#exportToPdf" text="Export PDF" />
+        <LineChart fx:id="LineChart" animated="false" layoutX="763.0" layoutY="50.0" prefHeight="330.0" prefWidth="600.0" title="CA / mois">
+          <xAxis>
+            <CategoryAxis side="BOTTOM" />
+        </xAxis>
+          <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+        <AreaChart fx:id="AreaChart" alternativeColumnFillVisible="true" animated="false" layoutX="53.0" layoutY="386.0" legendVisible="false" prefHeight="330.0" prefWidth="600.0" title="Nombre de connexions par mois">
+          <xAxis>
+            <CategoryAxis side="BOTTOM" />
+        </xAxis>
+          <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+        <PieChart fx:id="PieChart" layoutX="763.0" layoutY="385.0" prefHeight="330.0" prefWidth="600.0" title="Formations effectuées" />
+    </children>
+
+</AnchorPane>

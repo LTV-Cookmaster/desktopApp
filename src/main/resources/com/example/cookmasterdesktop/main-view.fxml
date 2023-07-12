@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1400.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Users">
+      <content>
+        <fx:include fx:id="clientView" source="client-view.fxml" />
+      </content>
+    </Tab>
+      <Tab text="Events">
+         <content>
+            <fx:include fx:id="eventView" source="event-view.fxml" />
+         </content>
+      </Tab>
+      <Tab text="Workshops">
+         <content>
+            <fx:include fx:id="workshopView" source="event-view.fxml" />
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
